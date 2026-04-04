@@ -1,4 +1,8 @@
+<!-- 👁 Visitor Counter -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=CertifiedCoders&style=flat-square" />
 
+</p>
 <!-- 👁 Visitor Counter -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=CertifiedCoders&style=flat-square" />
