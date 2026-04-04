@@ -1,7 +1,8 @@
 
+<!-- 👁 Visitor Counter -->
 <p align="center">
-    <b>ᴠɪsɪᴛᴏʀs</b><br>
- -->    <img align="middle" src="https://profile-counter.glitch.me/CHALCOGEN645/count.svg" />
+  <img src="https://komarev.com/ghpvc/?username=CertifiedCoders&style=flat-square" />
+
 </p>
 [<img src="https://telegra.ph/file/36a05fcbed47326719f5c.jpg"/>]
 
