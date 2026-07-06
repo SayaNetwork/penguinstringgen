@@ -11,5 +11,5 @@
 
 
 </details>
-<a href="https://t.me/sayaproject"><img title="Telegram" src="https://img.shields.io/badge/CHALCOGEN-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
+<a href="https://t.me/sayaproject"><img title="Telegram" src="https://img.shields.io/badge/Sᴀʏᴀ PʀᴏJᴇᴄᴛ 🥀%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
 
