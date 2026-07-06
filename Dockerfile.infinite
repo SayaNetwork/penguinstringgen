@@ -1,10 +1,14 @@
 FROM docker.io/library/python:3.12-slim
 
-RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates curl build-essential python3-dev libglib2.0-0 libpango-1.0-0 libpangoft2-1.0-0 libcairo2 libgdk-pixbuf-2.0-0 libffi8 shared-mime-info fonts-dejavu-core && rm -rf /var/lib/apt/lists/*
-
-RUN useradd -m -u 10001 runner
+RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates curl build-essential python3-dev libglib2.0-0 libpango-1.0-0 libpangoft2-1.0-0 libcairo2 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-dev && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN useradd -m -u 10001 runner
 
 COPY --chown=runner:runner . /app
 
@@ -14,7 +18,7 @@ USER runner
 
 ENV PORT=8000 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
 
-RUN chmod +x /app/infinite-build.sh /app/infinite-run.sh && /app/infinite-build.sh
+RUN chmod +x /app/infinite-run.sh
 
 EXPOSE 8000
 
